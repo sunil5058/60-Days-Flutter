@@ -1,19 +1,18 @@
 void main(){
-  String name ="Sunil Shrestha"; // String
-  int age = 21; // Integer
-  double salary=150000.00; // Double
-  bool isMarried = false; // Boolean
-  List <String> programmingLanguage=["Dart", "Python", "JavaScript"]; // List
-  DateTime currentDate=DateTime.now(); // DateTime
-  DateTime birthDate=DateTime(2002, 10, 15); // DateTime
+ List <String> programmingLanguage=["Dart","python","JavaScript","C++","Java"];
+List <int> numbers=[1,2,3,4,5];
+//Accessing list elements 
+print(programmingLanguage[0]);
+//length of list
+print (programmingLanguage.length);
 
-  print(name);
-  print(age);
-  print(salary);
-  print(isMarried);
-  print(programmingLanguage);
-  print(" my date of birth is ${birthDate.year}-${birthDate.month}-${birthDate.day}");
-  print(currentDate);
+print("Course Name :${programmingLanguage[0]}: rate.${numbers[1]}");
 
-  print("My name is $name. I am $age years old. my salary is $salary and I am married: $isMarried. I know programming languages:$programmingLanguage");
+
+//adding element to list
+programmingLanguage.add("Golang");
+
+
+print(programmingLanguage);
+
 }
