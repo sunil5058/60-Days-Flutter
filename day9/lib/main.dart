@@ -31,14 +31,11 @@ class HomePage extends StatelessWidget {
       'Kiran Shrestha',
       'Pooja Bhandari',
       'Suman KC',
-      'Prakash Dahal'
+      'Prakash Dahal',
     ];
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Student List'),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text('Student List'), centerTitle: true),
       body: ListView.separated(
         itemCount: students.length,
 
@@ -52,10 +49,7 @@ class HomePage extends StatelessWidget {
             ),
             child: Text(
               students[index],
-              style: const TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.w500,
-              ),
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
             ),
           );
         },
